@@ -1,0 +1,6 @@
+@import "../node_modules/@angular/material/prebuilt-themes/purple-green.css";
+
+.spacer {
+    flex: 1 1 auto;
+}
+

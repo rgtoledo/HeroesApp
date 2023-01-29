@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutGap="10px">
+    <h1 class="centertext">Are you sure?</h1>
+
+    <p class="centertext">
+        you are about to delete the {{data.superhero}}.
+        <br>
+        Do you want to continue?
+
+    </p>
+</div>
+<div fxLayout="row" >
+
+    <button mat-raised-button color="primary" (click)="cancel()"><mat-icon>cancel</mat-icon>cancel</button>
+    <span class="spacer"></span>
+    <button mat-raised-button color="warn" (click)="delete()"><mat-icon>delete</mat-icon>
+        Delete</button>
+
+
+</div>

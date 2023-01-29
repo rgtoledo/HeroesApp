@@ -1,0 +1,47 @@
+<mat-drawer-container fullscreen>
+    <mat-drawer #sidenav mode="side">
+        <h1>
+            Menu
+        </h1>
+        <hr>
+        <mat-nav-list>
+            <a routerLink="./list" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>label</mat-icon>
+                <span>
+                    Hero List
+                </span>
+            </a>
+            <a routerLink="./add" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>add</mat-icon>
+                <span>
+                    Add hero
+                </span>
+            </a>
+            <a routerLink="./search" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>search</mat-icon>
+                <span>
+                    Search Hero
+                </span>
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <button mat-button>
+            LogOut
+
+        </button>
+
+    </mat-toolbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+
+
+    </div>
+
+</mat-drawer-container>
