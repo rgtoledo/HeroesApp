@@ -27,12 +27,19 @@
 
     </div>
 
-    <div fxFlex="10" *ngIf="heroSelected" >
+    <!-- <div fxFlex="10" *ngIf="heroSelected" >
 
         <app-heroe-tarjeta [hero]="heroSelected"></app-heroe-tarjeta>
 
 
 
+    </div> -->
+
+    <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" *ngIf="heroSelected">
+        <div fxFlex="30" fxFlex.xl="10" fxFlex.lg="15" fxFlex.sm="40   " fxFlex.xs="100" >
+            <app-heroe-tarjeta [hero]="heroSelected"></app-heroe-tarjeta>
+        </div>
+    
     </div>
     <!-- <ng-template #NoTermino>
         <div *ngIf="termino.length > 0" >
