@@ -1,1 +1,16 @@
-<p>login works!</p>
+
+<h1>Login page</h1>
+<div fxLayout="row" fxflex>
+<mat-grid-list [cols]="5">
+    <mat-grid-tile>
+        <button mat-raised-button color="primary" (click)="login()">
+            Login
+        </button>
+        <span class="spacer"></span>
+        <button mat-raised-button color="warn" (click)="noLogin()">
+            Without Login
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+</div>
